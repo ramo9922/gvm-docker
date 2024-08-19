@@ -12,6 +12,8 @@ fi
 REPO=https://github.com/ramo9922/gvm-docker.git
 cd /opt && \
 	git clone ${REPO} && \
+	cd helper_scripts && \
+	bash regenerate_ssl_gsad.sh && \
 	cd /opt/gvm-docker && \
 	docker-compose up -d
 
