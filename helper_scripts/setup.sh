@@ -9,7 +9,7 @@ if [[ -n ${must_install[@]} ]]; then
 	apt update && apt install -y ${must_install[@]}
 fi
 
-REPO=
+REPO=https://github.com/ramo9922/gvm-docker.git
 cd /opt && \
 	git clone ${REPO} && \
 	cd /opt/gvm-docker && \
