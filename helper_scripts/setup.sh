@@ -32,3 +32,4 @@ case ${choise} in
 		;;
 	*) echo Default credentials are setted ;;
 esac
+
